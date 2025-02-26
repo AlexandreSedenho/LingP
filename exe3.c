@@ -1,11 +1,35 @@
 #include <stdio.h>
 
-int main() {
-  float usd = 5.86;
-  float euro = 6.00;
-  float btc = 300000.00;
-  printf("Cotação usd: %.3f\n", usd);
-  printf("Cotação euro: %.3f\n", euro);
-  printf("Cotação btc: %.3f\n", btc);
+int main(void) {
+  int nota;
+
+  printf("Digite uma nota [0-10]: ");
+  scanf("%d", &nota);
+  
+  if( nota >= 9 ) {
+      printf("Conceito: A");
+      return 0;
+  }
+  
+  if( nota >= 8 ) {
+      printf("Conceito: B");
+      return 0;
+  }
+  
+  if( nota >= 7 ) {
+      printf("Conceito: C");
+      return 0;
+  }
+  
+  if( nota >= 6 ) {
+      printf("Conceito: D");
+      return 0;
+  }
+  
+  if( nota >= 0 ) {
+      printf("Conceito: F");
+      return 0;
+  }
+
   return 0;
-}  
+}

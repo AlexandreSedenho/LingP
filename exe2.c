@@ -1,10 +1,28 @@
 #include <stdio.h>
 
-int main() {
-  int ano = 2006;
-  int idade = 20;
-  /* teste sem o \n */
-  printf("ano: %d\n", ano);
-  printf("Nova Idade: %d", idade);
-  return 0;
+int main () {
+    int num1;
+    int num2;
+    
+    printf("Digite o primeiro: ");
+    scanf("%d", &num1);
+    
+    printf("Digite o segundo: ");
+    scanf("%d", &num2);
+    
+    if( num1 > num2 ) {
+        printf("Maior: %d\n", num1);
+        printf("Menor: %d", num2);
+     }
+     
+    if( num2 > num1 ) {
+        printf("Maior: %d\n", num2);
+        printf("Menor: %d", num1);
+    }
+    
+    if( num1 == num2 ) {
+        printf("Iguais");
+    }
+    
+    return 0;
 }

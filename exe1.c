@@ -1,7 +1,18 @@
 #include <stdio.h>
 
-int main() {
-    int ano = 2006;
-    printf("Nascimento: %d", ano);
+int main () {
+    int nota;
+    
+    printf("Digite o nota do aluno: ");
+    scanf("%d", &nota);
+    
+    if( nota >= 6 ){
+        printf("Aprovado!");
+    }
+    
+    if ( nota < 6 ) {
+        printf("Reprovado!");
+    }
+    
     return 0;
 }
