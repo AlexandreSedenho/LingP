@@ -1,4 +1,3 @@
-/*recebe 3 notas, calcula e exibe a média das notas*/
 #include <stdio.h>
 
 int main(void) {
